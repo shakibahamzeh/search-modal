@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*content*/
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+.content .btn {
+  margin: 20px 0;
+  outline: 0;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+  background: chartreuse;
+  cursor: pointer;
+}
+.content .btn:hover {
+  opacity: 0.7;
+}
+
+/*modal*/
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: scale(0);
+}
+.modal-wrapper input {
+  border: none;
+  outline: 0;
+  background: transparent;
+  caret-color: #fff;
+  font-size: 18px;
+  color: #fff;
+  width: 400px;
+  border-bottom: 1px solid #fff;
+  padding: 0.5rem;
+}
+.modal-wrapper input::placeholder {
+  color: #fff;
+}
+.close {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+}
